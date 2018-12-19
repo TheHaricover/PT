@@ -20,7 +20,6 @@ public class Temps : MonoBehaviour {
 	private float daysPassed;
 	private int ancientDay;
 	private Text textTimeForwardButton;
-	private GameObject InfoPanel;
 
 	// Use this for initialization
 	void Start () {
@@ -80,8 +79,6 @@ public class Temps : MonoBehaviour {
 	}
 
 	public void timeForward(){
-		InfoPanel = GameObject.Find("infoPanelSol");
-		Destroy(InfoPanel);
 		if (Time.timeScale == 1f){
 			Time.timeScale = 2f;
 		}else if (Time.timeScale == 2f){

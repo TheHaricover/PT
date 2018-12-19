@@ -6,7 +6,6 @@ public class SolGeneration : MonoBehaviour {
 
 	public GameObject Sol;
 	public GameObject Terrain;
-	private GameObject InfoPanel;
 
 	public int seed = 0;
 	int nbSols = 100;
@@ -33,14 +32,6 @@ public class SolGeneration : MonoBehaviour {
 				sol.SetActive(true);
 			}
 		}
-
-		//Sol.SetActive(false);
-		//Debug.Log(nbLignes*nbColonnes);
-
-		/*InfoPanel = GameObject.Find("InfosPlanteSol");
-		if (InfoPanel.activeSelf){
-			InfoPanel.gameObject.SetActive(false);
-		}*/
 	}
 
 	void genSoils () {
